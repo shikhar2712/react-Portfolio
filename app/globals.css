@@ -2,32 +2,224 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(0, 0, 33);
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
+}
+html {
+  scroll-behavior: smooth;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: rgb(175, 175, 255);
+  font-size: 1.03rem;
+}
+.left {
+  font-size: 1.5rem;
+}
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 23px 0;
+  align-items: center;
+}
+.firstSection div {
+  width: 50%;
+}
+.firstSection .leftSection {
+  width: 50%;
+  margin-top: 187px;
+  font-size: 3rem;
+  margin-left: 11.5%;
+  margin-right: 5%;
+}
+.buttons .btn {
+  padding: 9px;
+  background: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flexbox;
+  margin: 3px;
+}
+.firstSection .rightSection {
+  width: 30%;
+  margin-top: 80px;
+  margin-right: 80px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+img {
+  height: 110%;
+  width: 110%;
+  align-items: center;
+}
+.purple {
+  color: rgb(142, 73, 206);
+}
+#element {
+  color: rgb(230, 235, 250, 194, 209);
+  font-size: 2.3rem;
+}
+.secondsection {
+  max-width: 80vw;
+  margin: auto;
+  font-size: large;
+  height: 65vh;
+  margin-top: 6%;
+}
+
+main hr {
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 60px 84px;
+  margin-top: 5%;
+}
+.text-gray {
+  color: gray;
+  margin-bottom: 10%;
+}
+.secondsection .box {
+  background: white;
+  width: 80vw;
+  height: 2px;
+  margin: 56px 0;
+  display: flex;
+}
+.secondsection .vertical {
+  background-color: white;
+  height: 93px;
+  width: 1.5px;
+  margin: 0 140px;
+}
+.image-top {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  top: -35px;
+  left: -14px;
+}
+.image-top1 {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  top: -35px;
+  left: -14px;
+  background-color: white;
+}
+
+.vertical-title {
+  position: relative;
+  top: 72px;
+  right: 37px;
+  width: 207px;
+  font-size: 18px;
+}
+.vertical-title1 {
+  position: relative;
+  top: 58px;
+  right: 40px;
+  width: 207px;
+  font-size: 18px;
+}
+.vertical-title2 {
+  position: relative;
+  top: 58px;
+  right: 55px;
+  width: 207px;
+  font-size: 18px;
+}
+.vertical-title3 {
+  position: relative;
+  top: 58px;
+  right: 55px;
+  width: 207px;
+  font-size: 18px;
+}
+
+.vertical-desc {
+  position: relative;
+  top: 74px;
+  color: gray;
+  font-size: 15px;
+  width: 150px;
+  right: 38px;
+}
+.vertical-desc1 {
+  position: relative;
+  top: 60px;
+  color: gray;
+  font-size: 15px;
+  width: 150px;
+  right: 38px;
+}
+.vertical-desc2 {
+  position: relative;
+  top: 60px;
+  color: gray;
+  font-size: 15px;
+  width: 150px;
+  right: 55px;
+}
+.vertical-desc3 {
+  position: relative;
+  top: 60px;
+  color: gray;
+  font-size: 15px;
+  width: 150px;
+  right: 55px;
+}
+.date {
+  position: relative;
+  top: -26px;
+  right: 44px;
+  width: 102px;
+  font-size: 14px;
+}
+
+footer {
+  background-color: rgb(18, 18, 62);
+  height: 220px;
+}
+.footer {
+  display: flex;
+}
+.summary {
+  margin-left: 74vh;
+  justify-content: center;
+  padding-top: 1%;
+  color: c88e8e;
+  text-decoration: underline;
+}
+.summary-text {
+  /* word-wrap: break-word; */
+  /* text-decoration: underline; */
+  color: #e5c2c2;
+  margin: 1%;
+  padding: 1%;
 }
