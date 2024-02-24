@@ -1,5 +1,28 @@
+"use client";
+import { useEffect } from "react";
 import Image from "next/image";
 import Typed from "typed.js";
+import React from "react";
+function MyComponent() {
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["C++", "&amp; Python debugger"],
+      typeSpeed: 100,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
+  return (
+    <div className="App">
+      <span ref={el} />
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -34,7 +57,10 @@ export default function Home() {
             <div>
               Hi, My name is<span className="purple"> Shikhar</span>
             </div>
-            <br />I am Web Developer and Programmer
+            I am Web Developer.
+            <span id="element">
+              <MyComponent />
+            </span>
             <div className="buttons">
               <a href=""></a>
               <a href="ShikharSingh_resume.pdf" download>

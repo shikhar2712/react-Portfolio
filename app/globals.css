@@ -47,7 +47,7 @@ nav ul li a:hover {
   align-items: center;
 }
 .firstSection div {
-  width: 50%;
+  width: 106%;
 }
 .firstSection .leftSection {
   width: 50%;
@@ -127,6 +127,7 @@ main hr {
 .image-top1 {
   height: 32px;
   width: 32px;
+  border-radius: 24px;
   position: relative;
   top: -35px;
   left: -14px;
@@ -222,4 +223,7 @@ footer {
   color: #e5c2c2;
   margin: 1%;
   padding: 1%;
+}
+#element {
+  font-size: 2.3rem;
 }
